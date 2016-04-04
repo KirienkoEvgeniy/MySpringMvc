@@ -16,29 +16,12 @@ public class StatisticRowFileDAOImpl implements StatisticRowFileDAO {
         jdbcTemplate = new JdbcTemplate(dataSource);
     }
 
-//    @Override
-//    public void saveOrUpdate(RowFile rowFile) {
-//
-//    }
-//
-//    @Override
-//    public void delete(int rowId) {
-//        String sql = "DELETE FROM statisticRow WHERE id_row=?";
-//        jdbcTemplate.update(sql, rowId);
-//
-//    }
-//
-//    @Override
-//    public RowFile get(int rowId) {
-//        return null;
-//    }
-
     @Override
     public List<RowFile> list() {
         String sql = "SELECT * FROM statRow";
         List<RowFile> listRowFile = jdbcTemplate.query(sql, new RowMapper<RowFile>() {
 
-        @Override
+            @Override
             public RowFile mapRow(ResultSet rs, int rowNum) throws SQLException {
                 RowFile aRowFile = new RowFile();
 
@@ -56,4 +39,23 @@ public class StatisticRowFileDAOImpl implements StatisticRowFileDAO {
 
         return listRowFile;
     }
+
+//    @Override
+//    public void saveOrUpdate(RowFile rowFile) {
+//
+//    }
+//
+//    @Override
+//    public void delete(int rowId) {
+//        String sql = "DELETE FROM statisticRow WHERE id_row=?";
+//        jdbcTemplate.update(sql, rowId);
+//
+//    }
+//
+//    @Override
+//    public RowFile get(int rowId) {
+//        return null;
+//    }
+
+
 }

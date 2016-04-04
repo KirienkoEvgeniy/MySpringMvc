@@ -55,6 +55,5 @@ public class StatisticFileDAOImpl implements StatisticFileDAO {
 });
 
         return listStatFile;
-//        return null;
     }
 }

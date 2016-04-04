@@ -1,10 +1,8 @@
 package MySpringMvc.controller;
 
-import MySpringMvc.dao.ContactDAO;
 import MySpringMvc.dao.StatisticFileDAO;
 
 import MySpringMvc.dao.StatisticRowFileDAO;
-import MySpringMvc.model.Contact;
 
 import MySpringMvc.model.RowFile;
 import MySpringMvc.model.StatFile;
@@ -15,26 +13,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.util.List;
 
 
 @Controller
 public class HomeController {
-
-//	@Autowired
-//	private ContactDAO contactDAO;
-//
-//
-//	@RequestMapping(value="/list")
-//	public ModelAndView listContact(ModelAndView model) throws IOException{
-//		List<Contact> listContact = contactDAO.list();
-//		model.addObject("listContact", listContact);
-//		model.setViewName("home");
-//
-//		return model;
-//	}
 
 	@Autowired
 	private StatisticFileDAO statisticFileDAO;
