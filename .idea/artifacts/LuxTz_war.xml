@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="LuxTz:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="LuxTz.war">
+      <element id="artifact" artifact-name="LuxTz:war exploded" />
+    </root>
+  </artifact>
+</component>

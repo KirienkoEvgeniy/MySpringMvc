@@ -1,13 +1,14 @@
-package MySpringMvc.model;
+package LuxTz.model;
 
 public class StatFile {
 
-    private int id;
+    private String id;
     private String name;
     private int maxf;
     private int minf;
     private float averf;
     private int lenghtfile;
+    private int kolrow;
 
 
     public StatFile() {
@@ -16,19 +17,23 @@ public class StatFile {
 
 
 
-    public StatFile(int id, String name, int maxf, int minf, float averf, int lenghtfile) {
+    public StatFile(String id, String name, int maxf, int minf, float averf, int lenghtfile, int kolrow) {
         this.id = id;
         this.name = name;
         this.maxf = maxf;
         this.minf = minf;
         this.averf = averf;
         this.lenghtfile = lenghtfile;
+        this.kolrow = kolrow;
+
     }
 
-    public int getId() {
+
+
+    public String getId() {
         return id;
     }
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -70,6 +75,17 @@ public class StatFile {
 
     public void setLenghtfile(int lenghtfile) {
         this.lenghtfile = lenghtfile;
+    }
+
+
+
+
+    public int getKolrow() {
+        return kolrow;
+    }
+
+    public void setKolrow(int kolrow) {
+        this.kolrow = kolrow;
     }
 }
 

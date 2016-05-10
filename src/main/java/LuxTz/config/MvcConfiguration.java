@@ -1,6 +1,6 @@
-package MySpringMvc.config;
+package LuxTz.config;
 
-import MySpringMvc.dao.*;
+import LuxTz.dao.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -14,7 +14,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import javax.sql.DataSource;
 
 @Configuration
-@ComponentScan(basePackages="MySpringMvc")
+@ComponentScan(basePackages= "LuxTz")
 @EnableWebMvc
 public class MvcConfiguration extends WebMvcConfigurerAdapter {
 	@Bean
